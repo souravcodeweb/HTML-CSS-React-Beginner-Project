@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #fff;
+}
+
+.form{
+    position: relative;
+    width: 20rem;
+    height: 3rem;
+}
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #920af4;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-family: inherit;
+    font-family: inherit;
+    color: #000;
+    font-weight: bold;
+    outline: none;
+    padding: 1.25rem;
+    background: none;
+}
+input:hover{
+    border-color: aqua;
+}
+input:focus{
+    border-color: #000;
+}
+label{
+    position: absolute;
+    left: 1rem;
+    top: 0.8rem;
+    padding: 0 0.5rem;
+    color: #000;
+    cursor: text;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+    -webkit-transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+    -moz-transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+    -ms-transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+    -o-transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+input:focus ~ label{
+    top: -0.5rem;
+    font-size: 0.8rem;
+    left: 0.8rem;
+    background-color: #fff;
+}

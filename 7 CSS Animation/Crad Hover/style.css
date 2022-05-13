@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card .box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #5f27cd;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.container .card h1{
+    font-size: 30px;
+    color: #fff;
+}
+
+.container .card .slide{
+    width: 300px;
+    height: 200px;
+    transition: 0.6s;
+}
+
+.container .card .slide.slide1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100px);
+    z-index: 1;
+    transition: 0.6s;
+}
+.container .card:hover .slide.slide1{
+    transform: translateY(0px);
+}
+
+.container .card  .slide.slide2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 0.6s;
+    transform: translateY(-100px);
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+
+}
+
+.container .card:hover .slide.slide2{
+    transform: translateY(0);
+}
+
+.container .card .slide.slide2 .content h3{
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    text-align: center;
+    color: #414141;
+}
+
+.container .card .slide.slide2 .content p{
+    text-align: center;
+    color: #c0392b;
+    font-weight: bold;
+}
