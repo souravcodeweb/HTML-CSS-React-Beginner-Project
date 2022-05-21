@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    font-family: sans-serif;
+}
+
+a{
+    position: relative;
+    display: inline-block;
+    padding: 30px 50px;
+    margin: 90px 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    overflow: hidden;
+    margin-right: 50px;
+}
+
+
+a:hover{
+    background-color: #00ff4c;
+    color: #000;
+    box-shadow: 0 0 5px #5d00ff,
+                0 0 10px  #5d00ff,
+                0 0 20px  #5d00ff,
+                0 0 25px  aqua;
+}
