@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #000000, #ccc);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
+}
+.container .card img{
+    position: absolute;
+    bottom: 0;
+    height: 400px;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.container .card:hover img{
+    left: 73%;
+    height: 450px;
+}
+.container .card .content{
+    position: relative;
+    width: 50%;
+    left: 10%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.container .card:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.container .card .content h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 1rem;
+}
+.container .card .content p{
+    color: #fff;
+}
+.container .card .content a{
+    position: relative;
+    color: #000;
+    background: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
